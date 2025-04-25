@@ -19,7 +19,7 @@ export default function Dashboard() {
                 <div className="flex-1 overflow-auto">
                     <Welcome />
 
-                    <div className="w-[100vw] flex">
+                    <div className="w-[75vw] flex">
                         <div>
                             <ProgramCharts />
                         </div>

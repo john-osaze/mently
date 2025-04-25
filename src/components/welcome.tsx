@@ -22,13 +22,17 @@ export default function Welcome() {
 				</div>
 			</div>
 
-			<div className="mx-6 mb-6 bg-purple-600 rounded-lg p-4 text-white flex justify-between items-center">
-				<div>
-					<h1 className="text-2xl font-bold flex items-center inline">
-						Welcome Aboard, Blessing <span className="ml-2">👋</span>
+			<div className="mx-6 px-8 mb-6 bg-[#6F01D0] rounded-lg p-4 text-white flex justify-between items-center">
+				<div className="flex gap-x-15">
+					<h1 className="text-[27px] font-bold flex items-center inline">
+						Welcome Aboard, Blessing <span className="ml-2">
+						<Image src="/img/waving-hand.png" alt="waving emoji" className="inline-block" width={30} height={30}/>
+						</span>
 					</h1>
-					<p className="mt-1 inline">We&apos;re thrilled to have you join Techrity Team!</p>
+
+					<p className="mt-1 inline text-[#BDBDBD] text-[20px]">We&apos;re thrilled to have you join Techrity Team!</p>
 				</div>
+
 				<button className="bg-white text-purple-800 px-4 py-2 rounded font-medium">
 					Update Profile
 				</button>

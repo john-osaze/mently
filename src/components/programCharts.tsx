@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, MoreVertical, Settings, ChevronDown, Users } from 'lucide-react';
 import Image from 'next/image';
+import DoughnutChart from './doughnutChart';
 
 interface Mentor {
     id: number;
@@ -30,7 +31,7 @@ const ProgramCharts: React.FC = () => {
         {
             id: 1,
             title: "Fundamentals of User Interface & Experience",
-            description: "This program is a hands-on guide designed for designers who want to master color theory and confidently apply it to their designs. This practical approach",
+            description: "This program is a hands-on guide designed for designers who want to master color theory and confidently apply it to their designs.",
             type: "Introduction",
             image: "/img/hero-2.png",
             mentors: [
@@ -43,7 +44,7 @@ const ProgramCharts: React.FC = () => {
         {
             id: 2,
             title: "Colour Hack Practical Group Call",
-            description: "This program is a hands-on guide designed for designers who want to master color theory and confidently apply it to their designs. This practical approach",
+            description: "This program is a hands-on guide designed for designers who want to master color theory and confidently apply it to their designs.",
             type: "Group Call",
             image: "/img/hero-3.png",
             host: { id: 1, name: "Faith Obolo", avatar: "/img/program-host-2.png" },
@@ -52,7 +53,7 @@ const ProgramCharts: React.FC = () => {
         {
             id: 3,
             title: "Colour Hack Practical Group Call",
-            description: "This program is a hands-on guide designed for designers who want to master color theory and confidently apply it to their designs. This practical approach",
+            description: "This program is a hands-on guide designed for designers who want to master color theory and confidently apply it to their designs.",
             type: "Group Call",
             image: "/img/hero-3.png",
             host: { id: 2, name: "Self", avatar: "/img/program-host-2.png" },
@@ -62,7 +63,7 @@ const ProgramCharts: React.FC = () => {
 
     return (
         <>
-            <div className="bg-gray-50 p-4 max-w-xl">
+            <div className="bg-white p-5 rounded-md max-w-md ml-6">
                 <div className="mb-4 flex justify-between items-center">
                     <div className="flex items-center gap-3">
                         <Menu size={20} className="text-gray-500" />
@@ -84,7 +85,7 @@ const ProgramCharts: React.FC = () => {
 
                 <div className="space-y-4">
                     {programs.map((program) => (
-                        <div key={program.id} className="bg-white rounded-xl overflow-hidden shadow-sm">
+                        <div key={program.id} className="w-90 bg-white rounded-xl overflow-hidden shadow-sm">
                             <div className="relative">
                                 <Image
                                     src={program.image}
@@ -164,8 +165,8 @@ const ProgramCharts: React.FC = () => {
             </div>
 
             {/* Users Chart */}
-            <div className="max-w-md">
-                <div className="flex justify-between items-center mb-4">
+            <div className="max-w-md ml-6 mt-8 border-gray-200 border rounded-xl bg-[#E7DDFF4D]">
+                <div className="flex justify-between items-center mb-4 border-b-2 border-gray-200 p-4">
                     <div className="flex items-center">
                         <span className="mr-2">
                             <Users size={18} />
@@ -178,15 +179,9 @@ const ProgramCharts: React.FC = () => {
                     </button>
                 </div>
 
-                <div className="bg-white rounded-lg border border-gray-200 p-4 flex items-center justify-center">
-                    <div className="w-48 h-48 relative">
-                        <div className="w-full h-full rounded-full bg-blue-100"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="text-center">
-                                <div className="text-3xl font-bold">240</div>
-                                <div className="text-gray-500 text-sm">Users</div>
-                            </div>
-                        </div>
+                <div className="rounded-lg p-4 flex items-center justify-center">
+                    <div className="w-100 h-100 relative">
+                      <DoughnutChart />
                     </div>
                     <div className="ml-6">
                         <div className="flex items-center mb-2">

@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
+import Nigeria from "../../public/svg/nigeria.svg"
+
 import {
-	FileText,
-	Users,
 	MoreVertical,
 	Plus,
-	Menu,
 } from 'lucide-react';
 
 
@@ -16,7 +15,7 @@ const activities = [
 		title: "KYC Verification",
 		description: "45 new persons just signed up on Mently.",
 		time: "25 minutes Ago",
-		imageSrc: "/api/placeholder/80/80",
+		imageSrc: "/img/profile-pic-1.png",
 		alt: "Woman with braided hair"
 	},
 	{
@@ -24,7 +23,7 @@ const activities = [
 		title: "New User Sign Up!",
 		description: "45 new persons just signed up on Mently.",
 		time: "25 minutes Ago",
-		imageSrc: "/api/placeholder/80/80",
+		imageSrc: "/img/profile-pic-2.png",
 		alt: "Woman with long hair"
 	},
 	{
@@ -32,7 +31,7 @@ const activities = [
 		title: "Withdrawal Request",
 		description: "Mardian requested a withdrawal.",
 		time: "25 minutes Ago",
-		imageSrc: "/api/placeholder/80/80",
+		imageSrc: "/img/profile-pic-3.png",
 		alt: "Man with glasses"
 	}
 ];
@@ -41,90 +40,144 @@ export const ApplicationMentorRecents = () => {
 	return (
 		<div className="mx-6 mb-6 flex gap-x-4">
 			{/* Applications Section */}
-			<div className="max-w-md">
+			<div className="w-132 h-[100%] bg-white p-4">
 				<div className="flex justify-between items-center mb-4">
 					<div className="flex items-center">
 						<span className="mr-2">
-							<FileText size={18} />
+							<Image src="/svg/hamburger.svg" alt="hamburger" unoptimized width={20} height={20} />
 						</span>
 						<h2 className="text-gray-500 font-medium">Applications</h2>
 					</div>
 					<div className="flex items-center">
-						<a href="#" className="text-purple-600 text-sm mr-2">See all</a>
+						<a href="#" className="text-[#6F01D0] font-bold text-sm mr-2">See all</a>
 						<MoreVertical size={18} className="text-gray-400" />
 					</div>
 				</div>
 
-				<div className="bg-white rounded-lg border border-gray-200 p-4">
-					<div className="border-b border-gray-100 pb-4 mb-4">
-						<div className="flex items-center justify-between mb-3">
+				<div className="bg-white rounded-lg p-4">
+					<div className="border-b border-gray-200 pb-4 mb-4">
+						<p className="text-[#7D8DA6] text-xs mt-5 mb-8">Mentors</p>
+						<div className="flex items-center justify-between gap-x-7 mb-3">
 							<div className="flex items-center">
 								<input type="checkbox" className="mr-3 w-4 h-4" />
-								<div className="w-8 h-8 rounded-full bg-gray-200 mr-3"></div>
+								<div className="mr-3">
+									<Image
+										src="/img/profile-pic-2.png"
+										alt="profile"
+										className="rounded-full object-cover"
+										width={40}
+										height={40}
+									/>
+								</div>
 								<div>
 									<h3 className="font-medium">Maxwell Smith</h3>
 									<p className="text-xs text-gray-500">maxwellsmith@gmail.com</p>
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-3 py-1 bg-red-50 text-red-500 rounded text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
 									Reject
 								</button>
-								<button className="px-3 py-1 bg-purple-600 text-white rounded text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
 									Accept
 								</button>
 							</div>
 						</div>
-						<div className="flex items-center space-x-3 text-xs">
-							<span className="bg-gray-100 text-gray-600 px-2 py-1 rounded">Product Designer</span>
-							<span className="bg-gray-100 text-gray-600 px-2 py-1 rounded">Space&apos;s Experience</span>
-							<div className="flex items-center">
-								<div className="w-4 h-3 bg-green-200 mr-1"></div>
+						<div className="ml-6 flex items-center space-x-3 text-[10px]">
+							<span className="bg-[#F3ECF9] text-gray-600 px-2 py-1 rounded border border-[#DDCEEE]">Product Designer</span>
+							<span className="bg-[#E8FDFB] text-gray-600 px-2 py-1 rounded border border-[#A1BDBA]">Space&apos;s Experience</span>
+							<div className="flex items-center bg-[#F4F4F4] px-2 py-1 rounded border border-[#ABBEE0]">
+								<div className="mr-1">
+									<Image src={Nigeria} alt="nigeria-flag" width={18} height={18} unoptimized />
+								</div>
 								<span>Lagos, Nigeria</span>
 							</div>
-							<span className="text-gray-500">GMT +1</span>
+							<span className="text-gray-500 px-2 py-1 rounded bg-[#F4F4F4] border border-[#C8C8C8]">GMT +1</span>
 						</div>
 					</div>
 
-					<div className="border-b border-gray-100 pb-4 mb-4">
+					<div className="border-b border-gray-200 pb-4 mb-4">
+						<p className="text-[#7D8DA6] text-xs mb-10 mt-9">Students</p>
 						<div className="flex items-center justify-between mb-3">
 							<div className="flex items-center">
 								<input type="checkbox" className="mr-3 w-4 h-4" />
-								<div className="w-8 h-8 rounded-full bg-gray-200 mr-3"></div>
+								<div className="mr-3">
+									<Image
+										src="/img/profile-pic-1.png"
+										alt="profile"
+										className="rounded-full object-cover"
+										width={40}
+										height={40}
+									/>
+								</div>
 								<div>
 									<h3 className="font-medium">Adeati Samuel</h3>
 									<p className="text-xs text-gray-500">maxwellsmith@gmail.com</p>
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-3 py-1 bg-red-50 text-red-500 rounded text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
 									Reject
 								</button>
-								<button className="px-3 py-1 bg-purple-600 text-white rounded text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
 									Accept
 								</button>
 							</div>
 						</div>
-						<div className="flex items-center text-xs">
-							<span className="bg-gray-100 text-gray-600 px-2 py-1 rounded mr-2">Product Designer</span>
-						</div>
 					</div>
 
-					<div className="border-b border-gray-100 pb-4 mb-4">
+					<div className="border-b border-gray-200 pb-4 mb-4">
 						<div className="flex items-center justify-between mb-3">
 							<div className="flex items-center">
 								<input type="checkbox" className="mr-3 w-4 h-4" />
-								<div className="w-8 h-8 rounded-full bg-gray-200 mr-3"></div>
+								<div className="mr-3">
+									<Image
+										src="/img/profile-pic-3.png"
+										alt="profile"
+										className="rounded-full object-cover"
+										width={40}
+										height={40}
+									/>
+								</div>
 								<div>
 									<h3 className="font-medium">Maxwell Smith</h3>
 									<p className="text-xs text-gray-500">maxwellsmith@gmail.com</p>
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-3 py-1 bg-red-50 text-red-500 rounded text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
 									Reject
 								</button>
-								<button className="px-3 py-1 bg-purple-600 text-white rounded text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
+									Accept
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div className="border-b border-gray-200 pb-4 mb-4">
+						<div className="flex items-center justify-between mb-3">
+							<div className="flex items-center">
+								<input type="checkbox" className="mr-3 w-4 h-4" />
+								<div className="mr-3">
+									<Image
+										src="/img/profile-pic-2.png"
+										alt="profile"
+										className="rounded-full object-cover"
+										width={40}
+										height={40}
+									/>
+								</div>
+								<div>
+									<h3 className="font-medium">Maxwell Smith</h3>
+									<p className="text-xs text-gray-500">maxwellsmith@gmail.com</p>
+								</div>
+							</div>
+							<div className="flex space-x-2">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
+									Reject
+								</button>
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
 									Accept
 								</button>
 							</div>
@@ -135,17 +188,25 @@ export const ApplicationMentorRecents = () => {
 						<div className="flex items-center justify-between mb-3">
 							<div className="flex items-center">
 								<input type="checkbox" className="mr-3 w-4 h-4" />
-								<div className="w-8 h-8 rounded-full bg-gray-200 mr-3"></div>
+								<div className="mr-3">
+									<Image
+										src="/img/profile-pic-4.png"
+										alt="profile"
+										className="rounded-full object-cover"
+										width={40}
+										height={40}
+									/>
+								</div>
 								<div>
 									<h3 className="font-medium">Adeati Samuel</h3>
 									<p className="text-xs text-gray-500">maxwellsmith@gmail.com</p>
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-3 py-1 bg-red-50 text-red-500 rounded text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
 									Reject
 								</button>
-								<button className="px-3 py-1 bg-purple-600 text-white rounded text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
 									Accept
 								</button>
 							</div>
@@ -155,62 +216,83 @@ export const ApplicationMentorRecents = () => {
 			</div>
 
 			{/* Mentors Section */}
-			<div className="max-w-md">
-				<div className="flex justify-between items-center mb-4">
-					<div className="flex items-center">
-						<span className="mr-2">
-							<Users size={18} />
-						</span>
-						<h2 className="text-gray-500 font-medium">Mentors</h2>
-					</div>
-					<div className="flex items-center">
-						<button className="mr-2 bg-white rounded-full p-1 border border-gray-200">
-							<Plus size={16} />
-						</button>
-						<a href="#" className="text-purple-600 text-sm mr-2">See all</a>
-						<MoreVertical size={18} className="text-gray-400" />
-					</div>
-				</div>
-
-				<div className="bg-white rounded-lg border border-gray-200 p-4">
-					<div className="border-b border-gray-100 pb-4 mb-4">
-						<div className="flex items-center justify-between">
-							<div className="flex items-center">
-								<div className="w-10 h-10 rounded-full bg-gray-200 mr-3"></div>
-								<div>
-									<h3 className="font-medium">Maxwell Smith</h3>
-									<p className="text-xs text-gray-500">Product Designer</p>
-								</div>
-							</div>
-							<button className="px-4 py-1 bg-purple-600 text-white rounded-full text-sm">
-								Message
+			<div className="w-92">
+				<div className="bg-white shadow-sm p-4 rounded-xl">
+					<div className="flex justify-between items-center mb-4">
+						<div className="flex items-center">
+							<span className="mr-2">
+								<Image src="/svg/hamburger.svg" alt="hamburger" unoptimized width={20} height={20} />
+							</span>
+							<h2 className="text-gray-500 font-medium">Mentors</h2>
+						</div>
+						<div className="flex items-center">
+							<button className="mr-2 bg-white rounded-full p-1 border border-gray-400">
+								<Plus size={16} />
 							</button>
+							<MoreVertical size={18} className="text-gray-400" />
 						</div>
 					</div>
 
-					<div>
-						<div className="flex items-center justify-between">
-							<div className="flex items-center">
-								<div className="w-10 h-10 rounded-full bg-gray-200 mr-3"></div>
-								<div>
-									<h3 className="font-medium">Adeati Samuel</h3>
-									<p className="text-xs text-gray-500">Product Designer</p>
+					<div className="bg-white rounded-lg p-4">
+						<div className="border-b border-gray-100 pb-4 mb-4">
+							<div className="flex items-center justify-between">
+								<div className="flex items-center">
+									<div className="rounded-full mr-3">
+										<Image
+											src="/img/profile-pic-4.png"
+											alt="profile"
+											className="rounded-full object-cover"
+											width={40}
+											height={40}
+										/>
+									</div>
+									<div>
+										<h3 className="font-medium">Maxwell Smith</h3>
+										<p className="text-xs text-gray-500">Product Designer</p>
+									</div>
 								</div>
+								<button className="px-4 py-1 bg-[#6F01D0] text-white rounded-full text-sm">
+									Message
+								</button>
 							</div>
-							<button className="px-4 py-1 bg-purple-600 text-white rounded-full text-sm">
-								Message
-							</button>
+						</div>
+
+						<div className="border-b border-gray-100 pb-4 mb-4">
+							<div className="flex items-center justify-between">
+								<div className="flex items-center">
+									<div className="rounded-full mr-3">
+										<Image
+											src="/img/profile-pic-3.png"
+											alt="profile"
+											className="rounded-full object-cover"
+											width={40}
+											height={40}
+										/>
+									</div>
+									<div>
+										<h3 className="font-medium">Adeati Samuel</h3>
+										<p className="text-xs text-gray-500">Product Designer</p>
+									</div>
+								</div>
+								<button className="px-4 py-1 bg-[#6F01D0] text-white rounded-full text-sm">
+									Message
+								</button>
+							</div>
+						</div>
+
+						<div className="btn mt-7">
+							<button type="button" className="w-full py-4 rounded-full bg-[#DDD6FB] text-md font-medium text-[#6F01D0]">See all</button>
 						</div>
 					</div>
 				</div>
 
 				{/* Recent Activities Section */}
 				<div className="mt-8 mb-6">
-					<div className="bg-white rounded-3xl p-6 shadow-sm">
+					<div className="bg-white rounded-xl p-6 shadow-sm">
 						<div className="flex justify-between items-center mb-6">
 							<div className="flex items-center gap-3">
-								<Menu size={24} className="text-gray-500" />
-								<h2 className="text-2xl font-medium text-gray-400">Recent Activities</h2>
+								<Image src="/svg/hamburger.svg" alt="hamburger" unoptimized width={20} height={20} />
+								<h2 className="text-lg font-medium text-gray-400">Recent Activities</h2>
 							</div>
 							<div className="flex items-center gap-3">
 								<span className="text-purple-700 font-medium">See all</span>
@@ -225,15 +307,15 @@ export const ApplicationMentorRecents = () => {
 										<Image
 											src={activity.imageSrc}
 											alt={activity.alt}
-											className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400"
-											width={100}
-											height={100}
+											className="rounded-full object-cover"
+											width={40}
+											height={40}
 										/>
 									</div>
 									<div className="flex-grow">
-										<h3 className="text-xl font-bold text-gray-900">{activity.title}</h3>
-										<p className="text-gray-500 mb-1">{activity.description}</p>
-										<span className="text-gray-500">{activity.time}</span>
+										<h3 className="text-md font-bold text-[#011627]">{activity.title}</h3>
+										<p className="text-[13px] text-[#707991] mb-1">{activity.description}</p>
+										<span className="text-[13px] text-[#707991]">{activity.time}</span>
 									</div>
 								</div>
 							))}

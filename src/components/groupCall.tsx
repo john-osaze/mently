@@ -4,20 +4,21 @@ import {
     MoreVertical,
     Calendar,
     Clock,
-    ChevronRight,
-    Activity,
+    ArrowRight,
 } from 'lucide-react';
+
+import GroupIcon from "../../public/svg/group-icon.svg"
 
 import Image from "next/image";
 
 
 export const GroupCall = () => {
     return (
-        <div className="mx-6 mb-6">
+        <div className="mx-6 mb-6 bg-white max-w-205 p-4 rounded-xl shadow-sm overflow-x-auto">
             <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center">
                     <span className="mr-2">
-                        <Activity size={18} />
+                        <Image src="/svg/hamburger.svg" alt="hamburger" unoptimized width={20} height={20} />
                     </span>
                     <h2 className="text-gray-500 font-medium">Group Calls</h2>
                 </div>
@@ -27,11 +28,11 @@ export const GroupCall = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-x-65">
                 {/* Meeting Card 1 */}
-                <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                    <div className="h-24 bg-gray-200 relative">
-                        <Image src="/img/card-img-1.png" alt="Meeting banner" className="w-full h-full object-cover" width={100} height={100}/>
+                <div className="w-85 rounded-lg border bg-[#F9F7FF] p-3 border-gray-200 overflow-hidden">
+                    <div className="h-24 relative">
+                        <Image src="/img/card-img-1.png" alt="Meeting banner" className="w-full h-full object-cover rounded-xl" width={100} height={100} />
                     </div>
                     <div className="p-3">
                         <div className="mb-2">
@@ -40,34 +41,46 @@ export const GroupCall = () => {
                                 Ongoing
                             </span>
                         </div>
-                        <h3 className="font-medium mb-1">Weekly Meeting - Product Demo Review with Testers</h3>
-                        <div className="flex items-center text-xs text-gray-500 mb-3">
+                        <h3 className="font-normal mb-1 text-lg text-[#595564] pb-2 border-b border-gray-300">Weekly Meeting - Product Demo Review with Testers</h3>
+                        <div className="flex items-center text-xs text-gray-500 mt-3 mb-3">
                             <Calendar size={12} className="mr-1" />
                             <span>Mon, Jul 30, 2024</span>
-                            <div className="mx-2 w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div className="mx-7 w-[0.5px] h-5 bg-gray-300"></div>
                             <Clock size={12} className="mr-1" />
                             <span>9:00 - 11:00AM</span>
                         </div>
-                        <div className="flex items-center mb-3">
-                            <div className="w-4 h-4 rounded-full bg-gray-300 mr-1"></div>
-                            <span className="text-xs text-gray-500">UX Strategy Study group</span>
+                        <div className="flex gap-x-5 mb-3">
+                            <div className="flex items-center mb-3">
+                                <div className="mr-1">
+                                    <Image src={GroupIcon} alt="group-icon" className="object-cover" width={18} height={18} />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] text-[#A195C0]">Study group</p>
+                                    <p className="text-xs text-[#595564] font-medium">UX Strategy Study group</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p className="text-[10px] text-[#A195C0]">Mentors</p>
+                                <Image src="/img/avatar-stack.png" alt="mentors" width={40} height={40} />
+                            </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="px-3 py-1 border border-purple-500 text-purple-500 rounded text-sm">
+                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm">
                                 View Participants
                             </button>
-                            <button className="px-3 py-1 bg-purple-600 text-white rounded text-sm flex items-center">
+                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center">
                                 Join Now
-                                <ChevronRight size={16} className="ml-1" />
+                                <ArrowRight size={16} className="ml-1" />
                             </button>
                         </div>
                     </div>
                 </div>
 
                 {/* Meeting Card 2 */}
-                <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                    <div className="h-24 bg-gray-200 relative">
-                        <Image src="/img/card-img-2.png" alt="Meeting banner" className="w-full h-full object-cover" width={100} height={100}/>
+                <div className="w-85 rounded-lg border bg-[#F9F7FF] p-3 border-gray-200 overflow-hidden">
+                    <div className="h-24 relative">
+                        <Image src="/img/card-img-2.png" alt="Meeting banner" className="w-full h-full object-cover rounded-xl" width={100} height={100} />
                     </div>
                     <div className="p-3">
                         <div className="mb-2">
@@ -76,34 +89,46 @@ export const GroupCall = () => {
                                 Upcoming
                             </span>
                         </div>
-                        <h3 className="font-medium mb-1">Weekly Meeting - Product Demo Review with Testers</h3>
-                        <div className="flex items-center text-xs text-gray-500 mb-3">
+                        <h3 className="font-normal mb-1 text-lg text-[#595564] pb-2 border-b border-gray-300">Weekly Meeting - Product Demo Review with Testers</h3>
+                        <div className="flex items-center text-xs text-gray-500 mt-3 mb-3">
                             <Calendar size={12} className="mr-1" />
                             <span>Mon, Jul 30, 2024</span>
-                            <div className="mx-2 w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div className="mx-7 w-[0.5px] h-5 bg-gray-300"></div>
                             <Clock size={12} className="mr-1" />
                             <span>9:00 - 11:00AM</span>
                         </div>
-                        <div className="flex items-center mb-3">
-                            <div className="w-4 h-4 rounded-full bg-gray-300 mr-1"></div>
-                            <span className="text-xs text-gray-500">UX Strategy Study group</span>
+                        <div className="flex gap-x-5 mb-3">
+                            <div className="flex items-center mb-3">
+                                <div className="mr-1">
+                                    <Image src={GroupIcon} alt="group-icon" className="object-cover" width={18} height={18} />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] text-[#A195C0]">Study group</p>
+                                    <p className="text-xs text-[#595564] font-medium">UX Strategy Study group</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p className="text-[10px] text-[#A195C0]">Mentors</p>
+                                <Image src="/img/avatar-stack.png" alt="mentors" width={40} height={40} />
+                            </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="px-3 py-1 border border-purple-500 text-purple-500 rounded text-sm">
+                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm">
                                 View Participants
                             </button>
-                            <button className="px-3 py-1 bg-purple-600 text-white rounded text-sm flex items-center">
+                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center">
                                 Join Now
-                                <ChevronRight size={16} className="ml-1" />
+                                <ArrowRight size={16} className="ml-1" />
                             </button>
                         </div>
                     </div>
                 </div>
 
                 {/* Meeting Card 3 */}
-                <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-                    <div className="h-24 bg-gray-200 relative">
-                        <Image src="/img/card-img-2.png" alt="Meeting banner" className="w-full h-full object-cover" width={100} height={100}/>
+                <div className="w-85 rounded-lg border bg-[#F9F7FF] p-3 border-gray-200 overflow-hidden">
+                    <div className="h-24 relative">
+                        <Image src="/img/card-img-1.png" alt="Meeting banner" className="w-full h-full object-cover rounded-xl" width={100} height={100} />
                     </div>
                     <div className="p-3">
                         <div className="mb-2">
@@ -112,25 +137,37 @@ export const GroupCall = () => {
                                 Ongoing
                             </span>
                         </div>
-                        <h3 className="font-medium mb-1">Weekly Meeting - Product Demo Review with Testers</h3>
-                        <div className="flex items-center text-xs text-gray-500 mb-3">
+                        <h3 className="font-normal mb-1 text-lg text-[#595564] pb-2 border-b border-gray-300">Weekly Meeting - Product Demo Review with Testers</h3>
+                        <div className="flex items-center text-xs text-gray-500 mt-3 mb-3">
                             <Calendar size={12} className="mr-1" />
                             <span>Mon, Jul 30, 2024</span>
-                            <div className="mx-2 w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <div className="mx-7 w-[0.5px] h-5 bg-gray-300"></div>
                             <Clock size={12} className="mr-1" />
                             <span>9:00 - 11:00AM</span>
                         </div>
-                        <div className="flex items-center mb-3">
-                            <div className="w-4 h-4 rounded-full bg-gray-300 mr-1"></div>
-                            <span className="text-xs text-gray-500">UX Strategy Study group</span>
+                        <div className="flex gap-x-5 mb-3">
+                            <div className="flex items-center mb-3">
+                                <div className="mr-1">
+                                    <Image src={GroupIcon} alt="group-icon" className="object-cover" width={18} height={18} />
+                                </div>
+                                <div>
+                                    <p className="text-[10px] text-[#A195C0]">Study group</p>
+                                    <p className="text-xs text-[#595564] font-medium">UX Strategy Study group</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p className="text-[10px] text-[#A195C0]">Mentors</p>
+                                <Image src="/img/avatar-stack.png" alt="mentors" width={40} height={40} />
+                            </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="px-3 py-1 border border-purple-500 text-purple-500 rounded text-sm">
+                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm">
                                 View Participants
                             </button>
-                            <button className="px-3 py-1 bg-purple-600 text-white rounded text-sm flex items-center">
+                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center">
                                 Join Now
-                                <ChevronRight size={16} className="ml-1" />
+                                <ArrowRight size={16} className="ml-1" />
                             </button>
                         </div>
                     </div>
