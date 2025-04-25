@@ -75,10 +75,10 @@ export const ApplicationMentorRecents = () => {
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm cursor-pointer hover:bg-[#D83535] hover:text-white transition delay-100 duration-300">
 									Reject
 								</button>
-								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
 									Accept
 								</button>
 							</div>
@@ -116,10 +116,10 @@ export const ApplicationMentorRecents = () => {
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm cursor-pointer hover:bg-[#D83535] hover:text-white transition delay-100 duration-300">
 									Reject
 								</button>
-								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
 									Accept
 								</button>
 							</div>
@@ -145,10 +145,10 @@ export const ApplicationMentorRecents = () => {
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm cursor-pointer hover:bg-[#D83535] hover:text-white transition delay-100 duration-300">
 									Reject
 								</button>
-								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
 									Accept
 								</button>
 							</div>
@@ -174,10 +174,10 @@ export const ApplicationMentorRecents = () => {
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm cursor-pointer hover:bg-[#D83535] hover:text-white transition delay-100 duration-300">
 									Reject
 								</button>
-								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
 									Accept
 								</button>
 							</div>
@@ -203,10 +203,10 @@ export const ApplicationMentorRecents = () => {
 								</div>
 							</div>
 							<div className="flex space-x-2">
-								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm">
+								<button className="px-7 py-2 bg-red-50 text-[#D83535] bg-[#FFEDED] border border-[#D09696] rounded-md text-sm cursor-pointer hover:bg-[#D83535] hover:text-white transition delay-100 duration-300">
 									Reject
 								</button>
-								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm">
+								<button className="px-7 py-2 bg-[#6F01D0] text-white text-[13px] rounded-md text-sm cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
 									Accept
 								</button>
 							</div>

@@ -43,7 +43,7 @@ const NavItem: React.FC<NavItemProps> = ({ icon, text, active, onClick }) => (
 export const Sidebar = () => {
     const [activeTab, setActiveTab] = useState('dashboard');
     return (
-        < div className="w-70 h-285 bg-[#340260] text-white flex flex-col px-3" >
+        < div className="w-70 h-295 bg-[#340260] text-white flex flex-col px-3" >
             <div className="p-4 flex items-center">
                 <Image src={Logo} alt="logo" className="mr-2" width={100} height={100} />
                 <span className="text-xl font-bold sr-only">techrity</span>
@@ -60,10 +60,12 @@ export const Sidebar = () => {
                 <NavItem icon={<MessageSquare size={20} />} text="Forums" active={activeTab === 'forums'} onClick={() => setActiveTab('forums')} />
                 <NavItem icon={<DollarSign size={20} />} text="Finances" active={activeTab === 'finances'} onClick={() => setActiveTab('finances')} />
                 <NavItem icon={<Award size={20} />} text="Rewards" active={activeTab === 'rewards'} onClick={() => setActiveTab('rewards')} />
-                <div className="px-4 py-1 text-xs text-right">
-                    <span className="bg-[#0214BD38] text-white text-xs px-2 py-1 rounded-full">Coming Soon</span>
+                <div className="relative">
+                    <NavItem icon={<BarChart2 size={20} />} text="Analytics" active={activeTab === 'analytics'} onClick={() => setActiveTab('analytics')} />
+                    <div className="absolute top-0 right-0 px-4 py-1 text-xs text-right">
+                        <span className="bg-[#0214BD38] text-white text-xs px-2 py-1 rounded-full">Coming Soon</span>
+                    </div>
                 </div>
-                <NavItem icon={<BarChart2 size={20} />} text="Analytics" active={activeTab === 'analytics'} onClick={() => setActiveTab('analytics')} />
                 <NavItem icon={<Settings size={20} />} text="Settings" active={activeTab === 'settings'} onClick={() => setActiveTab('settings')} />
                 <NavItem icon={<LogOut size={20} />} text="Log Out" active={activeTab === 'logout'} onClick={() => setActiveTab('logout')} />
             </div>
@@ -75,7 +77,7 @@ export const Sidebar = () => {
                     <a href="#" className="text-[#F0C074] text-xs mt-7 block underline">Visit Montly Help Desk Here</a>
                 </div>
 
-                <div className="flex items-center justify-between mt-12">
+                <div className="flex items-center justify-between mt-12 mb-10">
                     <span className="text-sm">Switch to Classic Mode</span>
                     <div className="w-10 h-5 bg-purple-800 rounded-full flex items-center px-1">
                         <div className="w-3 h-3 bg-white rounded-full"></div>

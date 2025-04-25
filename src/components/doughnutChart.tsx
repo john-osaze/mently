@@ -10,14 +10,14 @@ import {
     TooltipItem
 } from 'chart.js';
 
-// Register the required Chart.js components
+
 Chart.register(ArcElement, Tooltip, Legend);
 
 const DoughnutChart: React.FC = () => {
     const chartRef = useRef<HTMLCanvasElement | null>(null);
     const chartInstance = useRef<Chart<'doughnut'> | null>(null);
 
-    // Sample data for the doughnut chart
+
     const data: ChartData<'doughnut'> = {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
         datasets: [
@@ -25,15 +25,15 @@ const DoughnutChart: React.FC = () => {
                 label: 'Dataset 1',
                 data: [12, 19, 3, 5, 2],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',
                     'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 99, 132, 0.8)',
                     'rgba(255, 206, 86, 0.8)',
                     'rgba(75, 192, 192, 0.8)',
                     'rgba(153, 102, 255, 0.8)',
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
+                    'rgba(255, 99, 132, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
                     'rgba(153, 102, 255, 1)',
@@ -48,10 +48,11 @@ const DoughnutChart: React.FC = () => {
         responsive: true,
         plugins: {
             legend: {
+                display: false,
                 position: 'bottom',
             },
             title: {
-                display: false,
+                display: true,
                 text: 'Data Distribution',
                 font: {
                     size: 16,
@@ -70,16 +71,14 @@ const DoughnutChart: React.FC = () => {
                 }
             }
         },
-        cutout: '60%', // Controls the size of the hole in the middle
+        cutout: '60%',
     };
 
     useEffect(() => {
-        // Clear any existing chart
         if (chartInstance.current) {
             chartInstance.current.destroy();
         }
 
-        // Create new chart
         if (chartRef.current) {
             chartInstance.current = new Chart(chartRef.current, {
                 type: 'doughnut',
@@ -88,7 +87,6 @@ const DoughnutChart: React.FC = () => {
             });
         }
 
-        // Cleanup on unmount
         return () => {
             if (chartInstance.current) {
                 chartInstance.current.destroy();
@@ -97,9 +95,9 @@ const DoughnutChart: React.FC = () => {
     }, []);
 
     return (
-        <div className="relative">
+        <div className="relative w-50 h-50">
             <Doughnut data={data} options={options} />
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute bottom-0 inset-0 flex items-center justify-center">
                 <div className="text-center">
                     <div className="text-3xl font-bold">240</div>
                     <div className="text-gray-500 text-sm">Users</div>

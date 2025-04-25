@@ -16,7 +16,7 @@ export default function Dashboard() {
             <div className="flex-1 flex flex-col overflow-auto">
                 <TopBar />
                 {/* Main Dashboard */}
-                <div className="flex-1 overflow-auto">
+                <div className="flex-1">
                     <Welcome />
 
                     <div className="w-[75vw] flex">

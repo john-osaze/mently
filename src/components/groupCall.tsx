@@ -66,10 +66,10 @@ export const GroupCall = () => {
                             </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm">
+                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm cursor-pointer hover:bg-[#6F01D0] hover:text-white transition delay-100 duration-300">
                                 View Participants
                             </button>
-                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center">
+                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
                                 Join Now
                                 <ArrowRight size={16} className="ml-1" />
                             </button>
@@ -114,10 +114,10 @@ export const GroupCall = () => {
                             </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm">
+                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm cursor-pointer hover:bg-[#6F01D0] hover:text-white transition delay-100 duration-300">
                                 View Participants
                             </button>
-                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center">
+                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
                                 Join Now
                                 <ArrowRight size={16} className="ml-1" />
                             </button>
@@ -162,10 +162,10 @@ export const GroupCall = () => {
                             </div>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm">
+                            <button className="px-5 py-3 border border-[#6F01D0] text-[#6F01D0] rounded-lg text-sm cursor-pointer hover:bg-[#6F01D0] hover:text-white transition delay-100 duration-300">
                                 View Participants
                             </button>
-                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center">
+                            <button className="px-5 py-3 bg-[#6F01D0] text-white rounded-lg text-[13px] flex items-center cursor-pointer hover:bg-transparent hover:text-[#6F01D0] border border-[#6F01D0] transition delay-100 duration-300">
                                 Join Now
                                 <ArrowRight size={16} className="ml-1" />
                             </button>

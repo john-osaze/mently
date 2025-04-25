@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, MoreVertical, Settings, ChevronDown, Users } from 'lucide-react';
+import { MoreVertical, Settings, ChevronDown, Users } from 'lucide-react';
 import Image from 'next/image';
 import DoughnutChart from './doughnutChart';
 
@@ -66,7 +66,7 @@ const ProgramCharts: React.FC = () => {
             <div className="bg-white p-5 rounded-md max-w-md ml-6">
                 <div className="mb-4 flex justify-between items-center">
                     <div className="flex items-center gap-3">
-                        <Menu size={20} className="text-gray-500" />
+                          <Image src="/svg/hamburger.svg" alt="hamburger" unoptimized width={20} height={20} />
                         <h1 className="text-xl text-gray-400 font-medium">Programs</h1>
                     </div>
                     <div className="flex items-center gap-3">
@@ -149,8 +149,8 @@ const ProgramCharts: React.FC = () => {
                                             <button
                                                 key={index}
                                                 className={`text-[11px] w-25 h-10 rounded-md ${action === "View Details"
-                                                    ? "border border-purple-700 text-purple-700"
-                                                    : "bg-purple-700 text-white"
+                                                    ? "border border-[#6F01D0] text-[#6F01D0]"
+                                                    : "bg-[#6F01D0] text-white"
                                                     }`}
                                             >
                                                 {action}
@@ -180,29 +180,29 @@ const ProgramCharts: React.FC = () => {
                 </div>
 
                 <div className="rounded-lg p-4 flex items-center justify-center">
-                    <div className="w-100 h-100 relative">
+                    <div className="relative">
                       <DoughnutChart />
                     </div>
                     <div className="ml-6">
                         <div className="flex items-center mb-2">
-                            <span className="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
-                            <span className="text-sm">Students</span>
-                            <span className="ml-auto font-medium">200</span>
+                            <span className="w-3 h-3 bg-[#62B2FD] rounded-full mr-2"></span>
+                            <span className="text-[13px] text-[#595564]">Students</span>
+                            <span className="ml-4 font-bold text-right text-[16px]">200</span>
                         </div>
                         <div className="flex items-center mb-2">
-                            <span className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
-                            <span className="text-sm">Mentors</span>
-                            <span className="ml-auto font-medium">8</span>
+                            <span className="w-3 h-3 bg-[#9BDFC4] rounded-full mr-2"></span>
+                            <span className="text-[13px] text-[#595564]">Mentors</span>
+                            <span className="ml-4 font-bold text-right text-[16px]">8</span>
                         </div>
                         <div className="flex items-center mb-2">
-                            <span className="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-                            <span className="text-sm">Programs</span>
-                            <span className="ml-auto font-medium">22</span>
+                            <span className="w-3 h-3 bg-[#F99BAB] rounded-full mr-2"></span>
+                            <span className="text-[13px] text-[#595564]">Programs</span>
+                            <span className="ml-4 font-bold text-right text-[16px]">22</span>
                         </div>
                         <div className="flex items-center">
-                            <span className="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
-                            <span className="text-sm">Others</span>
-                            <span className="ml-auto font-medium">10</span>
+                            <span className="w-3 h-3 bg-[#FFB44F] rounded-full mr-2"></span>
+                            <span className="text-[13px] text-[#595564]">Others</span>
+                            <span className="ml-4 font-bold text-right text-[16px]">10</span>
                         </div>
                     </div>
                 </div>
